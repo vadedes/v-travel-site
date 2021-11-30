@@ -1,0 +1,29 @@
+$small: 530px;
+$medium: 800px;
+$large: 1200px;
+
+@define-mixin mobile {
+    @media (min-width: $small) {
+        @mixin-content;
+    }
+}
+
+@define-mixin tablet {
+    @media (min-width: $medium) {
+        @mixin-content;
+    }
+}
+
+@define-mixin desktop {
+    @media (min-width: $large) {
+        @mixin-content;
+    }
+}
+
+@define-mixin clearfix {
+    &::after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+}

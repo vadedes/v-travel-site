@@ -1,25 +1,43 @@
 .primary-nav {
-    margin-top: 12px;
+    margin-top: 10px;
 
-    &--pull-right {
-        float: right;
+    @mixin tablet {
+        padding-top: 0;
     }
 
     ul {
         margin: 0;
         padding: 0;
-        @mixin clearfix;
     }
 
     li {
         list-style: none;
-        float: left;
-        padding-right: 20px;
+        display: inline-block;
+        padding-right: 7px;
+        @mixin tablet {
+            padding-right: 20px;
+        }
+    }
+
+    li:last-child {
+        padding-right: 0;
+        @mixin tablet {
+            padding-right: 20px;
+        }
     }
 
     a {
         color: #fff;
         text-decoration: none;
         font-weight: 300;
+        padding: 5px 8px;
+        font-size: 0.8rem;
+        background-color: rgba(47, 85, 114, 0.5);
+
+        @mixin tablet {
+            padding: 12px 0;
+            font-size: 1rem;
+            background-color: transparent;
+        }
     }
 }

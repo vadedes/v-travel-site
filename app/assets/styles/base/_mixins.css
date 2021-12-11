@@ -19,11 +19,3 @@ $large: 1010px;
         @mixin-content;
     }
 }
-
-@define-mixin clearfix {
-    &::after {
-        content: '';
-        clear: both;
-        display: table;
-    }
-}

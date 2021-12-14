@@ -3,12 +3,14 @@ import 'lazysizes';
 import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
-let stickyHeader = new StickyHeader();
+import ClientArea from './modules/ClientArea';
 
+new ClientArea();
+new StickyHeader();
 new RevealOnScroll(document.querySelectorAll('.feature-item'), 75);
 new RevealOnScroll(document.querySelectorAll('.testimonial'), 60);
 
-let mobileMenu = new MobileMenu();
+new MobileMenu();
 
 let modal; //declare variable to be used below
 

@@ -5,6 +5,16 @@ import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
 import ClientArea from './modules/ClientArea';
 
+//React Related Code Goes Here
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+//Import react components
+import MyAmazingComponent from './modules/MyAmazingComponent';
+
+ReactDOM.render(<MyAmazingComponent />, document.querySelector('#my-react-example'));
+
+//Main JS Code
 new ClientArea();
 new StickyHeader();
 new RevealOnScroll(document.querySelectorAll('.feature-item'), 75);
